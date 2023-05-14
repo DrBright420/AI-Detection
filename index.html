@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script type="application/x-javascript" src="face-api.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #image-container {
+        margin-bottom: 20px;
+      }
+
+      #expr {
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="file" id="upload" accept="image/*" />
+    <div id="image-container"></div>
+    <div id="expr">Loading</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.23.0/dist/face-api.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
